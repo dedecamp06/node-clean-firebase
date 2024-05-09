@@ -39,12 +39,12 @@ npm run test
 
 ## Instalação com Docker
 
-- No terminal, navegue até o diretório do projeto e execute: 
+- No terminal, navegue até a dentro da pasta functions do projeto e execute: 
 ```bash
   docker compose build
 ```
 
-- Depois de buildar o projeto, execute o docker do Node App:
+- Depois de buildar o projeto, execute o docker:
 
 ```bash
   docker compose up
