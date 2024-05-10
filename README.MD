@@ -36,6 +36,18 @@ Esse Comando vai buildar o projeto e executar o comando de start do Firebase.
 npm run test
 ```
 
+## Arquitetura
 
+A arquitetura do projeto é baseada no Clean Architecture, que propõe a separação das camadas para criar uma aplicação escalável e de fácil manutenção. O design visa permitir o crescimento horizontal da arquitetura de forma estruturada, atribuindo responsabilidades específicas a cada camada.
+
+- Camada Main: Esta camada é responsável pela entrada e saída de dados. No nosso caso, utilizamos o Firebase como controlador, tratando das interações de alto nível com os usuários e sistemas externos.
+
+- Camada de Domínio: Situada no topo da arquitetura, essa camada é central e independente de outras camadas. Ela contém as regras de negócio essenciais e os modelos de domínio que definem o núcleo funcional da aplicação.
+
+- Camada de Infraestrutura: Responsável por gerenciar todos os recursos externos do projeto, esta camada assegura que alterações em tecnologias ou plataformas externas não impactem as demais camadas. Isso facilita a manutenção e a evolução tecnológica do sistema sem grandes transtornos.
+
+- Camada de Apresentação: Aqui reside toda a lógica de apresentação e interação do usuário, organizada em Use Cases. Esta camada coordena o fluxo de dados para e da camada de Domínio, e transforma os dados para a exibição adequada ao usuário.
+
+Este design não apenas clarifica a separação de responsabilidades dentro do projeto, mas também suporta uma manutenção eficaz e a fácil adaptação a mudanças tanto em requisitos de negócios quanto em tecnologias de suporte.
 
 
