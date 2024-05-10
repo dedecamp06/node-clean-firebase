@@ -37,21 +37,5 @@ npm run test
 ```
 
 
-## Instalação com Docker
-
-- No terminal, navegue até a dentro da pasta functions do projeto e execute: 
-```bash
-  docker compose build
-```
-
-- Depois de buildar o projeto, execute o docker:
-
-```bash
-  docker compose up
-  ```
-
-  - Acesse o projeto através da URL http://localhost:3333/api
-- A Documentação de rotas está em http://localhost:3333/api-docs
-
 
 
